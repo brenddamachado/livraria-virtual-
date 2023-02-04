@@ -1,0 +1,94 @@
+<footer>
+        <div class="navlink">
+            <h4 class="nav"> Navegue pelo site</h4>
+
+            <div class="link">
+                <ul style="list-style-type:none;">
+                    <li><a href="/login"> Entre</a></li>
+                    <li><a href="/cadastro">Cadastre-se</a></li>
+                    <li><a href="/quemsomos">Saiba mais</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fl">
+
+            <h4 class="fale">Fale conosco</h4>
+            <div class="email">
+                <img src="/img/email.svg" alt="e-mail"> sac@leituravitual.com.br
+            </div>
+            <div class="tel">
+                <img src="/img/telefone.svg" alt="telefone">(21) 34125678
+            </div>
+
+            <p class="p"> De segunda a sexta-feira, das 8 às 17h (exceto feriados).</p>
+
+        </div>
+
+        <form name="f1" class="footer-col">
+            <h4 class="f1">Assine nossa Newsletter</h4>
+            <table>
+                <tr>
+                    <td>
+
+                        <input type="text" name="email" placeholder="Digite seu email..."
+                            onblur="validacaoEmail(f1.email)">
+                    </td>
+                    <td>
+                        <div id="msgemail"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="acredes">
+
+            <h4 class="ac1"> @livrariavirtual</h4>
+            <div class="redes">
+                <img src="/img/insta.svg" alt="instagram">
+                <img src="/img/face.svg" alt="facebook">
+                <img src="/img/twitter.svg" alt="twitter">
+                <img src="/img/linkdin.svg" alt="Linkdin">
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <div id="local">
+
+
+        <div class="l1">
+            <ul style="list-style-type:none;">
+                <li class="st"> livrariavirtual.com.br Serviços de Busca na Internet Ltda - CNPJ 08.311.795/0001-87
+                </li>
+                <li class="rua"> Rua da Assembleia, 100, 27 e 28 andar, Centro, Rio de Janeiro/RJ, CEP: 20040-007
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script language="Javascript">
+        function validacaoEmail(field) {
+            usuario = field.value.substring(0, field.value.indexOf("@"));
+            dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+
+            if ((usuario.length >= 1) &&
+                (dominio.length >= 3) &&
+                (usuario.search("@") == -1) &&
+                (dominio.search("@") == -1) &&
+                (usuario.search(" ") == -1) &&
+                (dominio.search(" ") == -1) &&
+                (dominio.search(".") != -1) &&
+                (dominio.indexOf(".") >= 1) &&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {
+                document.getElementById("msgemail").innerHTML = "E-mail válido";
+                alert("E-mail valido, agora você recebera todas as novidades!!");
+            }
+            else {
+                document.getElementById("msgemail").innerHTML = "<font color='red'>E-mail inválido </font>";
+                alert("E-mail invalido, inseira um e-mail com @. ");
+            }
+        }
+    </script>

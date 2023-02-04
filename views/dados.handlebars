@@ -1,0 +1,32 @@
+<h1> Clientes cadastrados</h1>
+<a class="btn btn-primary mb-1" href="/cadastro">create user</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">nome</th>
+      <th scope="col">sobrenome</th>
+      <th scope="col">login</th>
+      <th scope="col">senha</th>
+       <th scope="col">botoes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td> {{this.name}} </td>
+      <td>{{this.sobrenome}}</td>
+      <td>{{this.login}}</td>
+      <td> {{this.senha}}</td>
+      <td>
+        <a class="btn btn-primary" href="/user/{{this.id}}">view</a>
+        <a class="btn btn-success" href="/edit/{{this.id}}">edit</a>
+        <a class="btn btn-danger" href="/delete/{{this.id}}">delete</a>
+       </td>
+    </tr>
+    
+    
+    {{/each}}
+  </tbody>
+</table>

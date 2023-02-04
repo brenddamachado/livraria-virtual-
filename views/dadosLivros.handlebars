@@ -1,0 +1,33 @@
+<h1 class="d-flex justify-content-center mb-5 mt-4">Todas as suas leitura num só lugar!</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Titulo </th>
+            <th scope="col">Ano</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Nota</th>
+            <th scope="col">  </th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+
+      {{#each livros}}
+      <tr>
+            <th scope="row"> {{this.titulo}} </th>
+            <td>{{this.ano}}</td>
+            <td> {{this.genero}}  </td>
+            <td>{{this.nota}} </td>
+            <td>
+                <a class="btn btn-primary" href="/cardsBook/{{this.id}}">Ver</a>
+                <a class="btn btn-success" href="/editBook/{{this.id}}">Editar</a>
+                <a class="btn btn-danger" href="/deleteBook/{{this.id}}">Apagar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+    <a href="/pagUsuarios"><button  type="button" class=" btn btn-dark ">Adiconar mais!</button></a>
+</div>

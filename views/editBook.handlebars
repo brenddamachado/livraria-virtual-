@@ -1,0 +1,24 @@
+<h2 id="livro-h2">Editar avaliaçãoo: </h2>
+<form id="add-livro"  action="/updateBook/{{livro.id}}" method="POST">
+
+<div class="mb-3">
+  <label for="titulo" class="form-label">Título</label>
+  <input type="text" class="form-control" id="titulo" name="titulo" value="{{livro.titulo}}">
+</div>
+<div class="mb-3">
+  <label for="ano" class="form-label">Ano de lançamento</label>
+  <input type="text" class="form-control" id="ano" name="ano" value="{{livro.ano}}">
+</div>
+<div class="mb-3">
+  <label for="genero" class="form-label">Gênero</label>
+  <input type="text" class="form-control" id="genero" name="genero" value="{{livro.genero}}">
+</div>
+<div class="mb-3">
+  <label for="nota" class="form-label">Nota (de 1 a 5)</label>
+  <input type="text" class="form-control" id="nota" name="nota" value="{{livro.nota}}">
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="submit" class="btn btn-outline-info">Editar</button>
+ <a href="/dadosLivros"><button  type="button" class="btn btn-dark btn-lg">dadosLivros</button></a>
+</div>
+</form>

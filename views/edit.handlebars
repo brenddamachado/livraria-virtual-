@@ -1,0 +1,67 @@
+<h1>edit livros</h1>
+<form id="cad" action="/update/{{user.id}}" method="POST" class="form row g-3 needs-validation" novalidate>
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label" >Nome</label>
+    <input type="text" class="form-control" id="nome" name="name" value="{{user.name}}" required>
+    <div class="valid-feedback">
+      !
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Sobrenome</label>
+    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="{{user.sobrenome}}" required>
+    <div class="valid-feedback">
+      !
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="user" name="login" value="{{user.login}}" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Escolha um user.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Senha</label>
+    <input type="password" class="form-control" id="senha" name="senha" value="{{user.login}}" required>
+  
+    <div class="invalid-feedback">
+      Escolha uma senha.
+    </div>
+  </div>
+  
+ 
+  
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit" value="Cadastrar">Editar login</button>
+  </div>
+  <div class="col-12">
+    <a href="/login">Ir para login</a>
+  </div>
+</form>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>

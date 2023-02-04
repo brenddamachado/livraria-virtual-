@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Lora', serif;
+  }
+  
+  header p {
+    margin: 0;
+  }
+  
+  /*primeira parte da header, ajuda*/
+  #barra-1 {
+    background-color: #005859;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    width: auto;
+    height: 45px;
+  
+  }
+  
+  a {
+    text-decoration: none;
+  
+  }
+  
+  /* logo*/
+
+  
+  
+  
+  #logo {
+    background-color: #007A7C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 67px;
+  }
+
+  
+  #usuario a {
+    align-items: center;
+    display: flex;
+  
+  }
+  
+  #usuario img {
+    margin-right: 10px;
+  }
+  
+  /*navegação*/
+  
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    height: 40px;
+  }
+  
+  #place {
+    display: flex;
+    width: 60%;
+    margin-left: 20px;
+  }
+  
+  #place img {
+    margin-right: 10px;
+  }
+  
+  #navegar {
+    width: 40%;
+    justify-content: end;
+  }
+  
+  #navegar ul,
+  #infos ul {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  
+  #navegar ul li,
+  #infos ul li {
+    margin-right: 10px;
+  
+  }
+  
+  /*HOME*/
+  
+  #infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid grey 5px;
+    border-bottom: solid gray 5px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 21px;
+    margin-top: 40px;
+  }
+  
+  #infos b {
+    color: #005859;
+  }
+  
+  article {
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #texto2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  
+  /*LOGIN PAG*/
+  
+  
+  .text-center {
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="user"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  /*FOOTER*/
+  footer {
+    height: 46vh;
+    margin-top: 50vh;
+    display: flex;
+    background: #007A7C;
+  }
+  
+  /*Navegue pelo site*/
+  .navlink {
+    margin: 50px;
+    margin-left: 20vh;
+    height: 34px;
+  }
+  
+  
+  .nav {
+    width: 219px;
+    height: 23px;
+    left: 1042px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  
+  .link {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 34px;
+    cursor: pointer;
+  }
+  
+  
+  /*Acompanhe nossas redes*/
+  
+  .ac1 {
+    color: #FFFFFF;
+    width: 200px;
+    height: 2px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 10vh;
+  }
+  
+  
+  .acredes {
+    margin-left: 10vh;
+    margin-top: 6vh;
+  }
+  
+  .redes {
+    display: flex;
+    margin-left: 10vh;
+    margin-top: 3vh;
+  }
+  
+  
+  /*Contato*/
+  .fl {
+    margin: 50px;
+    height: 34px;
+    margin-left: 6vh;
+  }
+  
+  .fale {
+    margin-left: 10vh;
+    width: 219px;
+    height: 23px;
+    left: 1042px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  
+  }
+  
+  .email {
+    color: #FFFFFF;
+    margin: 35px;
+    height: 34px;
+    font-size: 19px;
+  }
+  
+  .tel {
+    margin: 35px;
+    color: #FFFFFF;
+    font-size: 19px;
+  }
+  
+  .p {
+    color: #FFFFFF;
+    margin: 35px;
+    font-size: 14px;
+  }
+  
+  /*local*/
+  #local {
+    font-size: 13px;
+    color: #FFFFFF;
+    background: #007A7C;
+  
+  
+  }
+  
+  /*preencher email*/
+  .l1 {
+  
+    text-align: center;
+  }
+  
+  .footer-col {
+    margin-top: 6vh;
+  
+  }
+  
+  .f1 {
+    margin-bottom: 3vh;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  
+  /*CADASTRO*/
+  #cad{
+    padding: 100px;
+  
+  }
+  
+  
+  /* PAGINA DO USUARIO*/
+  
+  #add-livro{
+    width: 60%;
+    margin: auto;
+    
+  }
+  #livro-h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /*QUEM SOMOS*/
+  
+  .text {
+    margin-left: 40vh;
+    margin-top: -50px;
+    color: black;
+    font-size: 1.7rem;
+    }
+    
+    .section-text {
+    position: relative;
+    bottom: 440px;
+    margin-left: 90px;
+    text-align: justify;
+    margin-right: 50px;
+    
+    }
+    
+    .sub {
+    text-align: center;
+    
+    margin-top: 10vh;
+    }
+    .foto1 {
+    margin-top: 100px;
+    transition: 0.4s;
+    margin-left: 50px;
+    }
+    
+    .foto1:hover {
+    transform: scale(1.1);
+    }
+    
+    
+    .text .section-text {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    line-height: 32px;
+    }
+    .section-text p{
+      margin: 0;
+    }
