@@ -8,7 +8,7 @@ Livraria Virtual é um site próprio para as pessoas avaliarem os livros já lid
 - Mysql
 
 
-## As dependencias instaladas nesse projeto foram: 
+## As dependências instaladas nesse projeto foram: 
 
 ```
 npm install express
@@ -57,3 +57,27 @@ npm i sequelize-cli
 - Login
 - Central do funcionário
 
+## Passo a passo para baixar e rodar o projeto: 
+
+- Clique em code na parte superior do projeto 
+
+
+- Dowlond zip
+
+- Extraia os arquivos
+
+
+- Abra o projeto no vsCode
+
+
+- Abra o terminal e escreva os comandos ⤵️
+
+
+```
+npm i ou npm install
+```
+
+
+```
+npm start 
+```
