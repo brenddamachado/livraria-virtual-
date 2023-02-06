@@ -1,5 +1,12 @@
 <h1 align="center"> Livraria Virtual📚  </h1>
 Livraria Virtual é um site próprio para as pessoas avaliarem os livros já lidos, assim outros usuários podem ler e analisar os feedbacks.
+<div style="display: inline_block" align = "center"><br>
+
+<img width=200px src="https://user-images.githubusercontent.com/112699067/216959176-689a0e49-9231-44c8-8812-8707b8f56b9b.png">
+<img width=250px src="https://user-images.githubusercontent.com/112699067/216967080-479906a3-d31a-4ad2-a2bf-8a12d004f507.png">
+<img width=250px src= "https://user-images.githubusercontent.com/112699067/216967333-23bf1f50-1b07-46d2-a3e2-816c70e50cfe.png">
+
+
 
 ## Tecnologias utilizadas no Projeto ⤵️
 
