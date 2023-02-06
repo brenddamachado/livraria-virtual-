@@ -17,17 +17,18 @@
     </form>
   </main>
   <script>
-    var login = document.getElementById("login").value;
-    var senha = document.getElementById("senha").value;
+  function logar (){
+    const login = document.getElementById("login").value;
+    const senha = document.getElementById("senha").value;
     if (login == "funcionario1" && senha == "364270") {
 
       location.href = './dados';
     } else {
-      alert('login ou senha incorreta.');
+     location.href = './pagUsuarios';
     
     }
     
-
+}
   </script>
 
 
