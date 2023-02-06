@@ -69,7 +69,11 @@ npm i sequelize-cli
 
 - Abra o projeto no vsCode
 
+- Crie um banco de dados chamado: modulo5
 
+```
+CREATE DATABASE modulo5;
+```
 - Abra o terminal e escreva os comandos ⤵️
 
 
