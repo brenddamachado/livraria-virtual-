@@ -5,21 +5,22 @@
       <img class="mb-2" src="/img/logo.png" alt="logo leitura virtual" width="150" height="150">
       <h1 class="h3 mb-3 fw-normal"> Área do Funcionário</h1>
 
-      <div class="form-floating" >
-        <input type="text" placeholder="login" id="login" required>
-      </div>
       <div class="form-floating">
-        <input type="password" placeholder="senha" id="senha" required>
-      </div>
-
+      <input type="email" class="form-control" id="floatingInput" placeholder="nome@example.com" required>
+      <label for="floatingInput">e-mail</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="senha" required>
+      <label for="floatingPassword">senha</label>
+    </div>
       <button class="w-100 btn btn-lg btn-success" type="submit" onclick="logar(); return false">Entrar</button>
 
     </form>
   </main>
   <script>
   function logar (){
-    const login = document.getElementById("login").value;
-    const senha = document.getElementById("senha").value;
+    const login = document.getElementById("floatingInput").value;
+    const senha = document.getElementById("floatingPassword").value;
     if (login == "" || senha == ""){
         alert('Preencha todos os campos')
     }
