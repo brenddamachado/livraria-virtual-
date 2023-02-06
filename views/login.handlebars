@@ -20,7 +20,7 @@
   function logar (){
     const login = document.getElementById("login").value;
     const senha = document.getElementById("senha").value;
-    if (login == "" && senha == ""){
+    if (login == "" || senha == ""){
         alert('Preencha todos os campos')
     }
     else if (login == "funcionario1" && senha == "364270") {
