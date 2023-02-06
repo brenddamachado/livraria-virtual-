@@ -40,19 +40,9 @@ const updateUser = async (req, res) =>{
     const data = req.body;
     const selector = {where:{id:id}};
     await User.update(data, selector).catch(err => console.log(err))
-    res.redirect('/' )
+    res.redirect('/dados' )
 }
 
-const viewUser = async (req, res) =>{
-    const {id} = await req.params;
-    const user = await User.findOne({
-        where:{
-            id:id
-        },
-        raw:true
-    }).catch(err => console.log(err))
-    res.render('user', {user} )
-}
 
 const deleteUser = async (req, res) =>{
     const {id} = await req.params;
@@ -64,7 +54,7 @@ const deleteUser = async (req, res) =>{
     }).catch(err => console.log(err))
 
  
-    res.redirect('/')
+    res.redirect('/dados')
 }
 
 //ADD LIVROS
@@ -128,5 +118,5 @@ const deleteBook = async (req, res) =>{
 
 
 module.exports = {
-    allUsers, userForm, saveUser, editUser, updateUser, viewUser, deleteUser,  bookForm, saveBook, allBook, editBook, updateBook, viewBook, deleteBook
+    allUsers, userForm, saveUser, editUser, updateUser, deleteUser,  bookForm, saveBook, allBook, editBook, updateBook, viewBook, deleteBook
 }

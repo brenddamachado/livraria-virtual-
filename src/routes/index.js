@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {allUsers, userForm, saveUser, editUser, updateUser, viewUser, deleteUser, bookForm, saveBook, allBook, editBook, updateBook, viewBook, deleteBook} = require('../controllers/UserController')
+const {allUsers, userForm, saveUser, editUser, updateUser, deleteUser, bookForm, saveBook, allBook, editBook, updateBook, viewBook, deleteBook} = require('../controllers/UserController')
 
 
 
@@ -27,7 +27,6 @@ router.get('/cadastro', userForm);
 router.post('/cadastro', saveUser);
 router.get('/edit/:id', editUser);
 router.post('/update/:id', updateUser);
-router.get('/user/:id', viewUser);
 router.get('/delete/:id', deleteUser);
 
 

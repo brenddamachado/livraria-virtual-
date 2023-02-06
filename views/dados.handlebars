@@ -1,14 +1,13 @@
-<h1> Clientes cadastrados</h1>
-<a class="btn btn-primary mb-1" href="/cadastro">create user</a>
+<h1 class="d-flex justify-content-center mb-5 mt-4"> Clientes cadastrados</h1>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">nome</th>
-      <th scope="col">sobrenome</th>
-      <th scope="col">login</th>
-      <th scope="col">senha</th>
-       <th scope="col">botoes</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Sobrenome</th>
+      <th scope="col">Login</th>
+      <th scope="col">Senha</th>
+       <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -20,9 +19,8 @@
       <td>{{this.login}}</td>
       <td> {{this.senha}}</td>
       <td>
-        <a class="btn btn-primary" href="/user/{{this.id}}">view</a>
-        <a class="btn btn-success" href="/edit/{{this.id}}">edit</a>
-        <a class="btn btn-danger" href="/delete/{{this.id}}">delete</a>
+        <a class="btn btn-success" href="/edit/{{this.id}}">Editar</a>
+        <a class="btn btn-danger" href="/delete/{{this.id}}">Deletar</a>
        </td>
     </tr>
     
